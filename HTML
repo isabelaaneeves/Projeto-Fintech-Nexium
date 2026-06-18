@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexium Capital - Dashboard</title>
+    <!-- Importação do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-200 min-h-screen flex font-sans">
+
+    <!-- Sidebar Lateral -->
+    <aside class="w-20 bg-pink-500 flex flex-col items-center py-10 gap-10">
+        <div class="text-white font-bold text-2xl">N.</div>
+        <div class="flex flex-col gap-8 text-white text-xl">
+            <span>👤</span>
+            <span>≡</span>
+        </div>
+        <div class="mt-auto flex flex-col gap-6 text-white text-xl">
+            <span>❓</span>
+            <span>⚙️</span>
+        </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-1 p-8">
+        
+        <!-- Header de Saldo -->
+        <header class="bg-white p-6 rounded-3xl shadow-lg w-full md:w-96 mb-10 border-b-4 border-pink-300">
+            <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Saldo Disponível</p>
+            <h1 class="text-3xl font-black text-gray-800">R$ 5.000,00</h1>
+        </header>
+
+        <!-- Grid de Conteúdo -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Painel Esquerdo -->
+            <section class="space-y-8">
+                <!-- Ações Rápidas -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg flex justify-between text-center">
+                    <div><div class="bg-pink-100 p-4 rounded-2xl mb-2">💰</div><span class="text-xs font-bold">PIX</span></div>
+                    <div><div class="bg-pink-100 p-4 rounded-2xl mb-2">🏦</div><span class="text-xs font-bold">TED</span></div>
+                    <div><div class="bg-pink-100 p-4 rounded-2xl mb-2">📱</div><span class="text-xs font-bold">RECARGA</span></div>
+                    <div><div class="bg-pink-100 p-4 rounded-2xl mb-2">💳</div><span class="text-xs font-bold">CDC</span></div>
+                </div>
+
+                <!-- Controle de Gastos -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg">
+                    <h2 class="font-bold text-lg mb-4 text-gray-700 text-center">CONTROLE DE GASTOS</h2>
+                    <div class="flex justify-around text-xs font-bold text-pink-500 mb-6">
+                        <span>ABRIL</span><span class="border-b-2 border-pink-500">MAIO</span><span>JUNHO</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600 font-mono">
+                        <li class="flex justify-between"><span>ALUGUEL:</span> <span>R$ 1.300,00</span></li>
+                        <li class="flex justify-between"><span>LUZ:</span> <span>R$ 230,00</span></li>
+                        <li class="flex justify-between"><span>INTERNET:</span> <span>R$ 140,00</span></li>
+                        <li class="flex justify-between"><span>MERCADO:</span> <span>R$ 600,00</span></li>
+                        <li class="flex justify-between border-t pt-2 font-bold text-pink-600"><span>GASTO PREVISTO:</span> <span>R$ 2.420,00</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Painel Direito (Extrato e Suporte) -->
+            <section class="flex flex-col gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-lg flex-grow">
+                    <h2 class="font-bold text-center mb-6">EXTRATO</h2>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-gray-300 pl-4">
+                            <p class="font-bold text-sm">TRANSFERÊNCIA PIX</p>
+                            <ul class="text-sm mt-2 space-y-1">
+                                <li>• R$ 1.300,00</li>
+                                <li>• R$ 230,00</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-2 border-gray-300 pl-4">
+                            <p class="font-bold text-sm">INVESTIMENTO</p>
+                            <ul class="text-sm mt-2">
+                                <li>• R$ 2.000,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box de Fale Conosco -->
+                <div class="bg-pink-100 p-6 rounded-3xl flex items-center justify-between shadow-inner">
+                    <p class="text-sm font-bold">NÃO ENCONTROU O QUE QUERIA? <br> <span class="text-pink-600">FALE CONOSCO!</span></p>
+                    <span class="text-3xl">🎧</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
