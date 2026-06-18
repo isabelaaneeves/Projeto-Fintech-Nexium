@@ -1,0 +1,51 @@
+/* Importação de uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Identidade Visual Nexium */
+.bg-pink-500 {
+    background-color: #ec4899; /* Rosa principal da marca */
+}
+
+.text-pink-600 {
+    color: #db2777;
+}
+
+.bg-pink-100 {
+    background-color: #fce7f3;
+}
+
+/* Efeito de hover suave para ícones e botões */
+.cursor-pointer:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Ajuste fino para garantir que o conteúdo não quebre em mobile */
+main {
+    width: 100%;
+}
+
+/* Estilo para as bordas das seções */
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* Customização da barra de rolagem para um visual mais clean */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #fdf2f8;
+}
+::-webkit-scrollbar-thumb {
+    background: #ec4899;
+    border-radius: 10px;
+}
